@@ -10,8 +10,7 @@ import { isChecked } from "../utils/isChecked";
  * @description: Antd 树形穿梭框
  */
 export const TreeTransfer: React.FC<TreeTransferProps> = (props) => {
-
-    const { dataSource, targetKeys = [], setTargetKeys, ...restProps } = props;
+    const { dataSource, targetKeys = [], ...restProps } = props;
     const { token } = theme.useToken();
 
     const transferDataSource: TransferItem[] = [];

@@ -26,14 +26,7 @@ const App: React.FC = () => {
         setTargetKeys(newKeys as any);
     };
 
-    return (
-        <TreeTransfer
-            dataSource={treeData}
-            targetKeys={targetKeys}
-            onChange={onChange}
-            setTargetKeys={setTargetKeys as any}
-        />
-    );
+    return <TreeTransfer dataSource={treeData} targetKeys={targetKeys} onChange={onChange} />;
 };
 
 export default App;

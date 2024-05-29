@@ -3,7 +3,7 @@ import { TreeDataNode } from "antd";
 /**
  * @description: 右穿梭框树数据转换
  * @param {TreeDataNode} treeData 树节点
- * @param {string} targetKeys 选中的key
+ * @param {string[]} targetKeys 出现在右穿梭的 key 数组
  */
 export const generateRightTree = (treeData: TreeDataNode[], targetKeys: string[]): TreeDataNode[] =>
     treeData

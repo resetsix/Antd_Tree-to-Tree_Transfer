@@ -4,10 +4,9 @@ import { TransferItem } from "../types/TransferItem";
 import { TreeTransferProps } from "../types/TreeTransferProps";
 import { generateLeftTree } from "../utils/generateLeftTree";
 import { generateRightTree } from "../utils/generateRightTree";
-import { isChecked } from "../utils/isChecked";
 
 /**
- * @description: Antd 树形穿梭框
+ * @description: Antd TreeTransfer
  */
 export const TreeTransfer: React.FC<TreeTransferProps> = (props) => {
     const { dataSource, targetKeys = [], ...restProps } = props;
@@ -33,13 +32,12 @@ export const TreeTransfer: React.FC<TreeTransferProps> = (props) => {
             render={(item) => item?.title}
             locale={{ itemUnit: "项", itemsUnit: "项" }}
         >
-            {({ direction, onItemSelect, onItemSelectAll, selectedKeys }) => {
-                const checkedKeys = [...selectedKeys, ...targetKeys];
+            {({ direction, onItemSelectAll, selectedKeys }) => {
                 if (direction === "left") {
+                    const checkedKeys = [...selectedKeys, ...targetKeys];
                     return (
                         <div style={{ padding: token.paddingXS }}>
                             <Tree
-                                blockNode
                                 checkable
                                 defaultExpandAll
                                 checkedKeys={checkedKeys}
@@ -51,9 +49,6 @@ export const TreeTransfer: React.FC<TreeTransferProps> = (props) => {
                                     );
                                     onItemSelectAll(newKeys, "replace");
                                 }}
-                                onSelect={(_, { node: { key } }) => {
-                                    onItemSelect(key, !isChecked(checkedKeys, key));
-                                }}
                             />
                         </div>
                     );
@@ -61,7 +56,6 @@ export const TreeTransfer: React.FC<TreeTransferProps> = (props) => {
                     return (
                         <div style={{ padding: token.paddingXS }}>
                             <Tree
-                                blockNode
                                 checkable
                                 defaultExpandAll
                                 checkedKeys={selectedKeys}

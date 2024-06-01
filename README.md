@@ -1,35 +1,37 @@
-# Tree-to-Tree Transfer Component
+## Tree-to-Tree Transfer Component
 
 ## Overview
 
-在线示例：[Netlify](https://treetotreetransfer.netlify.app/) 或 [Vercel](https://antd-tree-to-tree-transfer.vercel.app/)
+English | [中文文档](/README_zh.md)
 
-本项目针对 [Ant Design](https://ant.design/index-cn) 官网[Transfer 树形穿梭框](https://ant.design/components/transfer-cn#transfer-demo-tree-transfer)组件进行扩展，演示`左右侧树形穿梭框`组件实现过程，解决右侧`仅为列表`视图的痛点。
+Online example: [Netlify](https://treetotreetransfer.netlify.app/) or [Vercel](https://antd-tree-to-tree-transfer.vercel.app/)
 
-左右两侧均为树形结构的穿梭框，使得能够在两个树形结构之间方便地进行节点的选择与转移，特别适用于需要在具有层级关系的数据集中进行交互操作的场景。
+This project builds on the [Ant Design](https://ant.design/index-cn) official [Transfer Tree-Tree Shuttle Box](https://ant.design/components/transfer-cn#transfer-demo-tree-) component. transfer) component to demonstrate the implementation of the `right and left side tree shuttle box` component to solve the pain point of the right side `only list` view.
+
+Both left and right sides are tree-structured shuttle boxes, making it easy to select and transfer nodes between the two tree structures, which is especially suitable for scenarios that require interactions in datasets with hierarchical relationships.
 
 ## Features
 
-- **双树视图**：创新性地在穿梭框的右侧也采用树形结构，便于直观管理和转移嵌套数据。
-- **完全自定义**：除了`Tree`，仍可自定义其他需求组件。
-- **灵活配置**：遵循 `Antd` 定义的规范类型，提供丰富的属性配置，轻松控制组件行为和样式。
-- **响应式设计**：优化移动端体验，确保跨设备的无缝使用。
+- **Dual Tree View**: Innovatively, the right side of the shuttle box also adopts a tree structure, making it easy to intuitively manage and transfer nested data.
+- **Fully customizable**: In addition to the `Tree`, it is still possible to customize other requirements components.
+- **Flexible Configuration**: Following the specification type defined by `Antd`, rich property configuration is provided to easily control the component behavior and style.
+- **Responsive design**: Optimizes the mobile experience and ensures seamless use across devices.
 
 ## Getting Started
 
 ### Prerequisites
 
-> 确保您的开发环境已经安装了`Node.js`和`npm`（或`yarn`）。
+> Make sure you have `Node.js` and `npm` (or `yarn`) installed on your development environment.
 
 ### Setup
 
-1. 克隆本项目到本地。
+1. Clone the project locally.
 
-```bash
+``bash
 git clone https://github.com/resetsix/Antd_Tree-to-Tree_Transfer.git
 ```
 
-2. 进入项目目录并安装依赖。
+2. Go to the project directory and install the dependencies.
    
 ```bash
 cd your-project-name

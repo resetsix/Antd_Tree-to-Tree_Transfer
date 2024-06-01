@@ -39,3 +39,8 @@ cd your-project-name
 
 yarn # npm install
 ```
+
+3. 启动
+```bash
+yarn start
+```
